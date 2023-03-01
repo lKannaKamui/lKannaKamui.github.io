@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lan="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"/>
+  <link real="stylesheet" href="css/styles-survey.css"/>
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <h1 id="title">FCC Survey Form</h1>
+  <p id="description">Help us to improve the platform</p>
+<div>
+  <form id="survey-form">
+    <label id="name-label">Name
+    <input id="name" name="fullName" type="text" placeholder="Enter your name" required/></label>
+    <label id="email-label">Email
+    <input id="email" name="email" type="email" placeholder="Enter your email" required/></label>
+    <label id="number-label">Age (optional)
+    <input id="number" name="age" type="number" min="18" max="100"placeholder="Age"/></label>
+    <label>Which option best describes your current role?
+    <select id="dropdown">
+      <option>Student</option>
+      <option>Employee</option>
+    </select>
+    </label>
+    <label>Would you recommend freeCodeCamp to a friend?</label>
+    <label><input class="inline" type="radio" name="opinion" value="yes"/>Definitely</label>
+    <label><input class="inline" type="radio" name="opinion" value="no"/>Maybe</label>
+    <label><input class="inline" type="radio" name="opinion" value="not-sure"/>Not Sure</label>
+    <label>What is your favorite feature of freeCodeCamp?
+    <select id="dropdown">
+      <option>Challenges</option>
+      <option>Projects</option>
+    </select>
+    </label>
+    <label>
+      What would you like to see improved?   (Check all that apply)
+    </label>
+        <label><input class="inline" type="checkbox" name="front-end" value="frontend"/>Front-end Projects</label>
+    <label><input class="inline" type="checkbox" name="back-end" value="backend"/>Back-end Projects</label>
+    <label><input class="inline" type="checkbox" name="data-science" value="datascience"/>Data Visualization</label>
+    <label>
+      <label>
+        Any comments or suggestion?
+        <textarea rows="5" cols="30" placeholder="Enter your comment here"></textarea>
+      </label>
+
+      <input id="submit" type="submit" value="Submit"/>
+  </form>
+  </div>
+</body>
+
+</html>

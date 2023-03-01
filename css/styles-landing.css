@@ -1,0 +1,294 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+  }
+  
+  body{
+    background-color:white;
+    font-family:sans-serif;
+    
+  }
+  .divContainer{
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  /*HEADER SECTION*/
+  header{
+    top: 0;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #ff9511;
+  }
+  
+  .divImage{  
+    width: 30%;
+    display: flex;
+  }
+  
+  img{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  
+  .divMenu{
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+  }
+  
+  .nav-bar{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .nav-link{
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  /*EMAIL SECTION*/
+  .secEmail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100px;
+    margin-top: 105px;
+  }
+  
+  .secEmail > h3{
+    text-align:center;
+  }
+  
+  .secEmail > form > input[type="submit"]{
+    border: 0;
+    background-color: #ffc36e;
+    color: #000;
+    height: 20px;
+    width: 90px;
+    
+  }
+  
+  
+  
+  /*FEATURES SECTION*/
+  .secFeatures{
+    margin: 0 auto;
+  }
+  .product{
+    margin: 10px auto;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .block-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: darkorange;
+  }
+  
+  .block-description > h2 > i{
+    display:none;
+  }
+  
+  
+  .block-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 70vw;
+    padding: 5px;
+  }
+  /*HOW IT WORKS SECTION*/
+  
+  .gallery{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .dimension_video{
+    width: 60%;
+    height: 250px;
+  }
+  
+  /*PRICE PLANS*/
+  .price_plans{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .plans{
+    border: 1px solid #000;
+    height: 300px;
+    max-width: 250px;
+    width:100%;
+    margin-top: 10px;
+  }
+  .plan{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DDD;
+    height: 40px;
+  }
+  .info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 210px;
+  }
+  .info > h2{
+    margin-top: 20px;
+  }
+  
+  .info > ul{
+    margin-top: 20px;
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  .info > ul > li{
+    margin-top: 5px;
+    
+  }
+  
+  .selectPlan{
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .selectPlan > input[type="submit"]{
+    
+    border: 0;
+    background-color: #ffc36e;
+    color: #000;
+    height: 40px;
+    width: 120px;
+  }
+  
+  /*CONTACT*/
+  footer{
+    
+    height:80px;
+    background:lightgray;
+    margin-top:30px;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  .network{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 160px;
+  }
+  .copyright > ul{
+    display: flex;
+    padding:10px;
+    list-style-type: none;
+    
+  }
+  
+  .copyright > ul > li{
+    padding-left:10px;
+  }
+  
+  .copyright > ul > li > a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+  }
+  
+  
+  
+  .copyright > span{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2px 20px;
+    font-size: 14px;
+  }
+  
+  .network > a > img{
+    width:40px;
+    height:40px;
+  }
+  
+  @media(max-width:750px){
+    .price_plans{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 40px;
+    }
+  }
+  
+  @media(max-width:400px){
+    header{
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .divImage,.divMenu{  
+      width: 100%;
+    }
+    
+    .nav-bar{
+      display:flex;
+      flex-direction:column;
+    }
+    
+    .nav-bar > a{
+      padding: 4px;
+    }
+  
+    .secEmail{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 180px;
+      gap:4px;
+    }
+  
+    .secEmail > form{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:8px;
+    }
+  
+    .secFeatures > .product{
+      margin-top: 10px;
+    }
+  
+    .block-description > h2 > i{
+       display: inline;
+       color: darkorange;
+    }
+  
+    .block-icon {
+      display:none;
+    }
+    
+  }
